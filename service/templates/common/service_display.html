@@ -1,0 +1,37 @@
+{% load manage_site_extras %}
+
+<div class="card h-100">
+<div class="card-body pb-0 mb-0"><strong>{{ item.name }}</strong></div>
+<div class="card-body pt-0 mt-0"><small>{{ item.description }}</small></div>
+<div class="card-body pt-0 mt-0">
+<table class="card-body table table-bordered table-view">
+    <tbody>
+        <tr>
+            <td><strong>Тип Обслуживания</strong></td>
+            <td>{{ item.service_type.name }}</td>
+        </tr>
+        <tr>
+            <td><strong>Подходит для</strong></td>
+            <td>{{ item.gender }}</td>
+        </tr>
+        <tr>
+            <td><strong>Цена</strong></td>
+            <td>{{ item.price }}$</td>
+        </tr>
+        {% if item.discounted_price != None %}
+        <tr>
+            <td><strong>Цена со скидкой</strong></td>
+            <td>{{ item.discounted_price }}СОМ </small> </td>
+        </tr>
+        <tr>
+            <td><strong>Скидка</strong></td>
+            <td>{{ item.discounted_price|percentage:item.price }}% </small> </td>
+        </tr>
+        {% endif %}
+    </tbody>
+</table>
+</div>
+<div style='margin:0;padding:0;'>
+    <a href="{% url 'appointment-book' item.service_type.id item.id %}" class="card-link btn btn-info" style='width:100%;'>Книга</a>
+</div>
+</div>

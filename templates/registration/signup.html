@@ -1,0 +1,24 @@
+{% extends 'common/base.html' %}
+{% load widget_tweaks %}
+
+{% block title %}Зарегистрироваться{% endblock %}
+
+{% block content %}
+    {% if is_admin %}
+    <div class='container'>
+    <p class='text-center mb-0 pb-0' style="font-size:1.4em;"><strong>Регистрация сотрудников</strong></p><br>
+    {% include 'common/signup_form.html' %}
+    </div>
+    {% elif user.is_authenticated %}
+    <div class='container text-center justify-content-center mt-5 pt-5 mb-5 pb-5'>
+    <p>Вы уже вошли в систему.</p><br>
+    <a href='{% url 'home' %}'>Перейдите на домашнюю страниц</a><br>
+    <a href='{% url 'logout' %}'>Выйти</a>
+    </div>
+    {% else %}
+    <div class='container'>
+    <p class='text-center mb-0 pb-0' style="font-size:1.4em;"><strong>Регистрация клиентов</strong></p><br>
+    {% include 'common/signup_form.html' %}
+    </div>
+    {% endif %}
+{% endblock %}

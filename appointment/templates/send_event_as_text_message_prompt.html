@@ -1,0 +1,13 @@
+{% extends 'common/base.html' %}
+
+{% block title %}Спасибо{% endblock %}
+
+{% block content %}
+<div class='row justify-content-center'>
+    <div class='col-lg-4 col-md-6 col-sm-12'>
+        <h1 class='text-center'>Отправить событие как текстовое сообщение?</h1>
+        <h5 class='text-center'><a href="{% url 'send-event-as-text-message'%}">Да</a></h5>
+        <h5 class='text-center'><a href="{% url 'appointment' %}">Нет</a></h5>
+    </div>
+</div>
+{% endblock %}

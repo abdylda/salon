@@ -1,0 +1,13 @@
+{% extends 'common/base.html' %}
+
+{% block title %}Неквалифицированный{% endblock %}
+
+{% block content %}
+<div class='row justify-content-center'>
+    <div class='col-lg-4 col-md-6 col-sm-12'>
+        <h1 class='text-center'>Еще не прошел квалификацию!</h1>
+        <h5 class='text-center'>Простите! Вы должны прийти на прием, чтобы оставить нам отзыв!</h1>
+        <h5 class='text-center'><a href="{% url 'service-type'%}">Записаться на прием</a></h5>
+    </div>
+</div>
+{% endblock %}

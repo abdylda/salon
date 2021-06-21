@@ -1,0 +1,251 @@
+{% extends 'common/base.html' %}
+{% block title %}Управление сайтом{% endblock %}
+{% block content %}
+<div class="site-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-7">
+        <h2 class="site-section-heading font-weight-light text-black text-center">Управление сайтом</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-7">
+        <h5 class="site-section-heading font-weight-light text-black text-center">Главная страница</h5>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
+        <div class="h-100 p-4 p-lg-5 bg-dark site-block-feature-7">
+          <a href={% url 'home-picture-admin' %}>
+            <h5 class="text-white h4">Управление домашним изображением</h5>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
+        <div class="h-100 p-4 p-lg-5 bg-dark site-block-feature-7">
+          <a href={% url 'edit-map-location-text-admin' %}>
+            <h5 class="text-white h4">Редактировать текст местоположения карты</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-7">
+        <h5 class="site-section-heading font-weight-light text-black text-center">About</h5>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
+        <div class="h-100 p-4 p-lg-5 bg-dark site-block-feature-7">
+          <a href={% url 'edit-about-picture-admin' %}>
+            <h5 class="text-white h4">Изменить изображение</h5>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
+        <div class="h-100 p-4 p-lg-5 bg-dark site-block-feature-7">
+          <a href={% url 'edit-about-admin' %}>
+            <h5 class="text-white h4">Управление разделом</h5>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
+        <div class="h-100 p-4 p-lg-5 bg-dark site-block-feature-7">
+          <a href={% url 'contact-information-admin' %}>
+            <h5 class="text-white h4">Управление контактной информациейn</h5>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
+        <div class="h-100 p-4 p-lg-5 bg-dark site-block-feature-7">
+          <a href={% url 'award-admin' %}>
+            <h5 class="text-white h4">Управление наградами</h5>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
+        <div class="h-100 p-4 p-lg-5 bg-dark site-block-feature-7">
+          <a href={% url 'partnership-admin' %}>
+            <h5 class="text-white h4">Управляйте партнерскими отношениями</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-7">
+        <h5 class="site-section-heading font-weight-light text-black text-center">Галерея</h5>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
+        <div class="h-100 p-4 p-lg-5 bg-dark site-block-feature-7">
+          <a href={% url 'picture-admin' %}>
+            <h5 class="text-white h4">Управление галереей</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-7">
+        <h5 class="site-section-heading font-weight-light text-black text-center">Услуги и продукты</h5>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
+        <div class="h-100 p-4 p-lg-5 bg-dark site-block-feature-7">
+          <a href={% url 'service-type-admin' %}>
+            <h5 class="text-white h4">Управление типами услуг</h5>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
+        <div class="h-100 p-4 p-lg-5 bg-dark site-block-feature-7">
+          <a href={% url 'service-admin' %}>
+            <h5 class="text-white h4">Управление услугами</h5>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
+        <div class="h-100 p-4 p-lg-5 bg-dark site-block-feature-7">
+          <a href={% url 'product-admin' %}>
+            <h5 class="text-white h4">Управление продуктами</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-7">
+        <h5 class="site-section-heading font-weight-light text-black text-center">Пользователи</h5>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
+        <div class="h-100 p-4 p-lg-5 bg-dark site-block-feature-7">
+          <a href={% url 'user-admin' %}>
+            <h5 class="text-white h4">Список пользователей</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-7">
+        <h5 class="site-section-heading font-weight-light text-black text-center">Персонал</h5>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
+        <div class="h-100 p-4 p-lg-5 bg-dark site-block-feature-7">
+          <a href={% url 'signup-staff-admin' %}>
+            <h5 class="text-white h4">Добавить персонал</h5>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
+        <div class="h-100 p-4 p-lg-5 bg-dark site-block-feature-7">
+          <a href={% url 'staff-admin' %}>
+            <h5 class="text-white h4">Управлять персоналом</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-7">
+        <h5 class="site-section-heading font-weight-light text-black text-center">Назначения и квитанции</h5>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
+        <div class="h-100 p-4 p-lg-5 bg-dark site-block-feature-7">
+          <a href={% url 'appointment-calendar' %}>
+            <h5 class="text-white h4">Просмотр календаря встреч</h5>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
+        <div class="h-100 p-4 p-lg-5 bg-dark site-block-feature-7">
+          <a href={% url 'appointment-admin' %}>
+            <h5 class="text-white h4">Все встречи</h5>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
+        <div class="h-100 p-4 p-lg-5 bg-dark site-block-feature-7">
+          <a href={% url 'receipt-admin' %}>
+            <h5 class="text-white h4">Все квитанции</h5>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
+        <div class="h-100 p-4 p-lg-5 bg-dark site-block-feature-7">
+          <a href={% url 'edit-appointment-time-admin' %}>
+            <h5 class="text-white h4">Изменить время встречи</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-7">
+        <h5 class="site-section-heading font-weight-light text-black text-center">Составление отчетов</h5>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
+        <div class="h-100 p-4 p-lg-5 bg-dark site-block-feature-7">
+          <a href={% url 'reports-admin' %}>
+            <h5 class="text-white h4">Отчеты</h5>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
+        <div class="h-100 p-4 p-lg-5 bg-dark site-block-feature-7">
+          <a href={% url 'reviews-admin' %}>
+            <h5 class="text-white h4">Отзывы</h5>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
+        <div class="h-100 p-4 p-lg-5 bg-dark site-block-feature-7">
+          <a href={% url 'testimonials-admin' %}>
+            <h5 class="text-white h4">Отзывы</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-7">
+        <h5 class="site-section-heading font-weight-light text-black text-center">Блог</h5>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
+        <div class="h-100 p-4 p-lg-5 bg-dark site-block-feature-7">
+          <a href={% url 'article-admin'%}>
+            <h5 class="text-white h4">Управление блогом</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-7">
+        <h5 class="site-section-heading font-weight-light text-black text-center">Новостная рассылка</h5>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
+        <div class="h-100 p-4 p-lg-5 bg-dark site-block-feature-7">
+          <a href={% url 'newsletter' "staff" %}>
+            <h5 class="text-white h4">Информационный бюллетень для персонала</h5>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
+        <div class="h-100 p-4 p-lg-5 bg-dark site-block-feature-7">
+          <a href={% url 'newsletter' "customer" %}>
+            <h5 class="text-white h4">Информационный бюллетень для клиентов</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
